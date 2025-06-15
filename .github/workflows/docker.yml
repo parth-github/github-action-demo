@@ -1,5 +1,6 @@
 name: Docker
-on: [workflow_dispatch]
+on: 
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   docker-job:
