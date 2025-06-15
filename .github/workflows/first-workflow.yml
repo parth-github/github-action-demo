@@ -1,4 +1,4 @@
-name: First Workflow
+name: First-Workflow
 
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
@@ -6,7 +6,7 @@ on:
     branches: [ "master", "workflow-branch" ]
   pull_request:
     branches: [ "master", "workflow-branch" ]
-    
+
   workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         run: |
           python -v
           python -m pip -v
-    parallel-job-macos:
+  parallel-job-macos:
     runs-on: macos-latest
     steps:
       - name: View SW Version
